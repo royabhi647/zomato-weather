@@ -2,6 +2,8 @@
 
 This is a weather information application built with Next.js, TypeScript, and TailwindCSS. The application allows users to search for weather data based on city names and provides autocomplete suggestions as the user types. When a city is selected, the application fetches and displays the weather information for that locality.
 
+## [Deployment link](https://zomato-weather.vercel.app/)
+
 ## Features
 
 - **Search Interface**: A search box that provides autocomplete suggestions based on city names.
