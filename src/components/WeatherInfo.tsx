@@ -25,7 +25,10 @@ const WeatherInfo: React.FC = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+    <div
+      id="weather-info"
+      className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8"
+    >
       <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
         Weather Information
       </h2>

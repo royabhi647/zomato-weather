@@ -14,6 +14,15 @@ const Search: React.FC = () => {
     try {
       const data = await fetchWeatherData(query);
       dispatch(setWeatherData(data));
+      setTimeout(() => {
+        const weatherInfoElement = document.getElementById("weather-info");
+        if (weatherInfoElement) {
+          weatherInfoElement.scrollIntoView({ behavior: "smooth" });
+          setQuery("");
+        } else {
+          console.error('Element with id "weather-info" not found.');
+        }
+      }, 500);
     } catch (error) {
       console.error("Error fetching weather data:", error);
     } finally {
